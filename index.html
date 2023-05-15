@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componente Avaliação Interativa Principal</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">   
+</head>
+<body>
+    <div class="container">
+        <section class="tela" id="pagina2">
+            <div class="nova-tela">
+                <img class="thankyou" src="./images/illustration-thank-you.svg" alt="Imagem Agradecimento">
+                <div class="select" id="select"></div>
+                <p class="subtitulo">Thank you!</p>
+                <p class="agradecimento">We appreciate you taking the time to give a rating.
+                                        If you ever need more support, don't hesilate to get in touch!
+                </p>
+            </div>
+        </section>
+        <section class="tela ativo" id="pagina1">
+            <div class="estrela">
+                <img src="./images/icon-star.svg" alt="" class="estrela-circulo">
+            </div>
+            <div class="texto">
+                <h1 class="titulo">How did we do?</h1>
+                <p class="paragrafo">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+            </div>
+            <div class="notas">
+                <a href="#"><ul class="li" id="nota1" onclick="selectNota(1)">1</ul></a> 
+                <a href="#"><ul class="li" id="nota2" onclick="selectNota(2)">2</ul></a> 
+                <a href="#"><ul class="li" id="nota3" onclick="selectNota(3)">3</ul></a> 
+                <a href="#"><ul class="li" id="nota4" onclick="selectNota(4)">4</ul></a> 
+                <a href="#"><ul class="li" id="nota5" onclick="selectNota(5)">5</ul></a> 
+            </div>
+            <button class="enviar" id="btn-enviar">SUBMIT</button>
+        </section>
+    </div>
+    <script src="./JS/index.js"></script>
+</body>
+</html>

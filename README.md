@@ -1,0 +1,1 @@
+# componente-avaliacao-interativa-principal
